@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop With Esther</title>
+    <link rel="stylesheet" href="indexSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0cb8e41073.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience"> ACHIEVEMENTS</a></li>
+                <li><a href="#photos">GALLERY</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello, welcome to "Shop With Esther Store" my name is <br> Esther Mwamikazi </h1>
+            <P><span>Brand Owner</span></P>
+        </div>
+       </div> 
+    </div>
+    <!-----------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\HP\Desktop\Final Assessment Web Design\WhatsApp Image 2024-03-04 at 20.14.19.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us.</h1>
+                    <p class="about-par">I am currently running a store i named Shop With Esther at Kimihurura, Kigali Rwanda. This store sells modesty clothes to young women and makes them feel confident in their skin and who they are as a person depending on what they choose to wear. We are currently working with Zoi another fashion clothing store in Kigali to promote modesty clothes. This store was introduced in 2023 and so far it has been thriving because it is known for quality clothes.
+                    </p>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Experience--------------->
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title2"> ACHIEVEMENTS.</h1>
+            <div class="experience-info">
+              <div class="exp-0">
+                    <p>Secured a partnership with Zoi fashion clothing store which is known for dressing celebrities</p>
+              </div>
+              <div class="exp-1">
+                    <p>Showcased our clothes in Kigali Fashion Week 2023</p>
+                    
+              </div>
+              <div class="exp-2">
+                <p>Dressed HE Jeannette Kagame in the event prepared by Imbuto Foundation</p>
+              </div>
+          </div>
+        </div>
+      </div>  
+    
+    <!----------------------Photos--------------->
+    <div id="GALLERY">
+      <div class="container">
+          <h1 class="sub-title3">GALLERY.</h1>
+          <div class="projects-info">
+            <div>
+                <img src="C:\Users\HP\Desktop\Final Assessment Web Design\dress.jpg" alt="" width="300" height="350">     
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\Final Assessment Web Design\pants.jpg" alt="" width="300" height="350">
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\Final Assessment Web Design\skirt.jpg" alt="" width="300" height="350">
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\Final Assessment Web Design\skirts.jpg" alt="" width="300" height="350">
+            </div>
+            <div>
+                <video width="515" controls>
+                <source src="" type="https://youtu.be/7RedtcuhCrA?feature=shared">
+              </video>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+    
+    <!----------------------Contact--------------->
+    <div id="contact">
+      <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title4">CONTACT US.</h1>
+                <p><i class="fa-solid fa-envelope"></i>esthernella07@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+250 784084831</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/channel/UCIQzat4osUnDNIClmrHfH0g" class="fa fa-youtube-play" target="_blank"></a>
+					<a href="https://www.instagram.com/es_nella/" class="fa fa-instagram" target="_blank"></a>
+					<a href="https://www.linkedin.com/in/esther-mwamikazi-8106b52b1/" class="fa fa-linkedin" target="_blank"></a>
+                </div>
+                <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63801.571538919845!2d30.057176445205194!3d-1.9114696061883705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca13db5bbf103%3A0xce704dade862c428!2sKinyinya%2C%20Kigali!5e0!3m2!1sen!2srw!4v1709447439213!5m2!1sen!2srw" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Full Names" required>
+                    <input type="email" name="email" placeholder="Email Address"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+               
+    <!------------fotter------------>
+    <footer class="fotter-bottom">  
+       <p>&copy; 2024 Esther. All rights reserved.</P>    
+    </footer> 
+    
+    
+    <script src="script.js"></script>
+    <script>
+        var sidem = document.getElementById("sidemenu");
+        function openmenu(){
+            sidem.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidem.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
